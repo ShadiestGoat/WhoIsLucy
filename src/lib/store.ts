@@ -33,7 +33,7 @@ function qLangFactory(who: string): mapItem {
         t: "question",
         q: `What is ${who} favorite language?`,
         cb: (inp: string): qResp => {
-            return ["go", "golang", "js", "javascript", "ts", "typescript", "sql"].includes(inp) ? "1" : "0"
+            return ["go", "golang", "js", "javascript", "ts", "typescript", "sql", "python", "py"].includes(inp) ? "1" : "0"
         }
     }
 }
@@ -48,7 +48,7 @@ export const sitemap = [
         qColorFactory("my"),
         {
             t: "question",
-            q: `What was the my dating app idea called (the acronym)?`,
+            q: `What was my dating app idea called (the acronym)?`,
             cb: (inp: string): string => {
                 return ["emle"].includes(inp) ? "1" : "0"
             }
