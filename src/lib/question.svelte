@@ -11,7 +11,11 @@
 
     function onKeyDown(e:KeyboardEvent) {
         if (e.key == "Enter") {
-            onSubmit(trueD.cb(inp.trim().toLocaleLowerCase()))
+            const r = trueD.cb(inp.trim().toLocaleLowerCase())
+            if (r == "0") {
+                inp = ""
+            }
+            onSubmit(r)
         }
     }
 

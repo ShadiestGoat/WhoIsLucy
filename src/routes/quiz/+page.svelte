@@ -21,7 +21,7 @@
 						glowClass = ""
 					}, 1000)
 				}
-				break
+				return
 			case "1":
 				if (!isSlideAtm) {
 					glowClass = "right"
