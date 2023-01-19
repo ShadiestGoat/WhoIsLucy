@@ -41,11 +41,11 @@
         border-radius: 16px;
         background-color: var(--bg-3);
         font-size: 1.3rem;
-        width: 30vw;
+        width: min(30vw, 180px);
         transition: all 0.75s;
     }
     input:focus {
-        width: 34vw;
+        width: min(35vw, 230px);
         padding: 1.5vh 1.5vw;
     }
 </style>
