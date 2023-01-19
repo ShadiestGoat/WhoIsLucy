@@ -1,0 +1,90 @@
+:root {
+    --storm-1: #d8dee9;
+    --storm-2: #e5e9f0;
+    --storm-3: #eceff4;
+    --frost-1: #8fbcbb;
+    --frost-2: #88c0d0;
+    --frost-3: #81a1c1;
+    --frost-4: #5e81ac;
+    --aurora-1: #bf616a;
+    --aurora-2: #d08770;
+    --aurora-3: #ebcb8b;
+    --aurora-4: #a3be8c;
+    --aurora-5: #b48ead;
+    --polar-1: #2e3440;
+    --polar-2: #3b4252;
+    --polar-3: #434c5e;
+    --polar-4: #4c566a;
+    --polar-5: #646f84;
+
+    --ico: var(--storm-3);
+    --danger: var(--aurora-1);
+    --success: var(--aurora-4);
+    --bg-1: var(--polar-1);
+    --bg-2: var(--polar-2);
+    --bg-3: var(--polar-3);
+    --bg-4: var(--polar-4);
+    --bg-5: var(--polar-5); 
+
+    background-color: var(--bg-2);
+    font-size: clamp(13px, 2.75vw, 22px);
+}
+
+body {
+    margin: 0;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6, summary {
+    color: var(--ico);
+    margin: 0.25vh 0 0 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.1;
+    font-family: 'Roboto';
+}
+
+i {
+    color: inherit;
+}
+
+::selection {
+    color: var(--ico);
+    background: #4141ad;
+}
+
+input, textarea {
+    border: none;
+    outline: none;
+    color: var(--ico);
+    font-family: 'Roboto';
+    font-weight: bolder;
+}
+
+a { 
+    text-decoration: none;
+    color: var(--ico);
+}
+
+.btn {
+    padding: 2vh 4vw;
+    border-radius: 8px;
+    background-color: var(--bg-3);
+    transition: all 0.5s;
+    box-shadow: 0 0 8px 1px var(--bg-1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 10px var(--bg-1);
+    background-color: var(--bg-4);
+}
